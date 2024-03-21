@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 import static org.hamcrest.CoreMatchers.containsString;
-import static ru.yandex.praktikum.pages.EnvConfig.DEFAULT_TIMEOUT;
+import static ru.yandex.praktikum.pages.config.EnvConfig.DEFAULT_TIMEOUT;
 
 public class OrderPage {
     private final WebDriver driver;

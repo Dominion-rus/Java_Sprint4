@@ -1,4 +1,4 @@
-package ru.yandex.praktikum.pages;
+package ru.yandex.praktikum.pages.config;
 
 public class EnvConfig {
     public static final String BASE_URL = "https://qa-scooter.praktikum-services.ru/";

@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 import static org.junit.Assert.assertEquals;
-import static ru.yandex.praktikum.pages.EnvConfig.BASE_URL;
-import static ru.yandex.praktikum.pages.EnvConfig.DEFAULT_TIMEOUT;
+import static ru.yandex.praktikum.pages.config.EnvConfig.BASE_URL;
+import static ru.yandex.praktikum.pages.config.EnvConfig.DEFAULT_TIMEOUT;
 
 public class MainPage {
     private final WebDriver driver;

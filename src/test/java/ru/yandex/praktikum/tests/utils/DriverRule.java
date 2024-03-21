@@ -11,7 +11,7 @@ public class DriverRule extends ExternalResource {
     private WebDriver driver;
 
     @Override
-    protected void before() throws Throwable {
+    protected void before(){
     initDriver();
     }
 

@@ -11,8 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 import static org.junit.Assert.assertEquals;
-import static ru.yandex.praktikum.pages.config.EnvConfig.BASE_URL;
-import static ru.yandex.praktikum.pages.config.EnvConfig.DEFAULT_TIMEOUT;
+import static ru.yandex.praktikum.pages.config.EnvConfig.*;
 
 public class MainPage {
     private final WebDriver driver;
@@ -54,7 +53,7 @@ public class MainPage {
         for (String windowHandle : driver.getWindowHandles()) {
             driver.switchTo().window(windowHandle);
         }
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT_FOR_OPEN_YANDEX));
         wait.until(ExpectedConditions.urlToBe(YANDEX_URL));
         assertEquals("URL после нажатия на лого яндекс не совпадает", YANDEX_URL, driver.getCurrentUrl());
 
